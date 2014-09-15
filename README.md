@@ -14,11 +14,11 @@ We want to keep the URLs working as best we can.
 
 ## Solution
 
-* A set of Nginx redirects for the first version of the site.
+* A set of nginx redirects for the first version of the site.
 
 * A single HTML page with JavaScript to pick out the client-site anchor references and redirect based on the anchor.
 
-The NGIX redirects are in [nginx.conf](https://github.com/LiftCookbook/nginx-redirects/blob/master/nginx.conf#L48), between `# Re-writes from ...` and `# End of cookbook rewrites`.  That file is the default nginx config which serves up an _index.html_ page.
+The nginx redirects are in [nginx.conf](https://github.com/LiftCookbook/nginx-redirects/blob/master/nginx.conf#L48), between `# Re-writes from ...` and `# End of cookbook rewrites`.  That file is the default nginx config which serves up an _index.html_ page.
 
 The JavaScript is in [index.html](https://github.com/LiftCookbook/nginx-redirects/blob/master/index.html).
 
